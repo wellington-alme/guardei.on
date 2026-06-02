@@ -1,8 +1,7 @@
 name = "guardei"
 compatibility_date = "2026-06-02"
-type = "javascript"
 
-site = { bucket = "./dist", include = ["**/*"], exclude = [] }
+assets = { directory = "./dist" }
 
 [build]
 command = "npm install && npm run build"

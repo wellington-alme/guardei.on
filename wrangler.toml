@@ -1,8 +1,7 @@
 name = "guardei"
 compatibility_date = "2026-06-02"
-type = "javascript"
 
-site = { bucket = "./frontend/dist", include = ["**/*"], exclude = [] }
+assets = { directory = "./frontend/dist" }
 
 [build]
 command = "npm run build"
