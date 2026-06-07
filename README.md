@@ -11,6 +11,10 @@
 - ✅ Organizar e remover favoritos
 - ✅ Interface intuitiva e responsiva
 
+**Acesso em produção:** https://guardei.wellington-santos6a.workers.dev
+
+> Nota: as imagens do catálogo são carregadas a partir de URLs remotas (`https://via.placeholder.com/300`). Se estiverem ausentes, atualize a página ou verifique a conexão com a internet.
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
@@ -406,11 +410,9 @@ kill -9 <PID>  # Matar processo
 
 ---
 
-## 👥 Contribuidores
+## 👥 Contribuição
 
-- **José Luan Diniz**
-- **Wellington Almeida**
-- **Carlos Eduardo França**
+Desenvolvido para trabalho prático da turma de DevOps por José Luan Diniz, Wellington Almeida e Carlos Eduardo.
 
 ---
 
@@ -429,11 +431,3 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 - [Vite Documentation](https://vitejs.dev/)
 
 ---
-
-## 📞 Suporte
-
-Para reportar problemas ou sugerir melhorias, abra uma [issue](https://github.com/seu-usuario/guardei/issues) no repositório.
-
----
-
-**Desenvolvido com ❤️ para simplificar o gerenciamento de produtos favoritos**
