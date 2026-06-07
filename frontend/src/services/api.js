@@ -1,6 +1,15 @@
 import axios from 'axios'
 
-const API_URL = import.meta.env.VITE_API_URL || ''
+let API_URL = import.meta.env.VITE_API_URL || ''
+
+// Se a variável de ambiente estiver com o placeholder de exemplo
+// (ex: "https://SEU_BACKEND_API_URL_HERE"), tratar como vazia para
+// usar requisições relativas (mesma origem). Isso evita "Network Error"
+// quando o build tiver o placeholder e a API real estiver no mesmo host
+// (ex.: Cloudflare Worker que serve API + frontend).
+if (typeof API_URL === 'string' && /SEU_BACKEND_API_URL|SEU_BACKEND|SEU_BACKEND_API_URL_HERE/i.test(API_URL)) {
+  API_URL = ''
+}
 
 const api = axios.create({
   baseURL: API_URL,
