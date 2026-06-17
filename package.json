@@ -6,8 +6,11 @@
     "build": "npm --prefix frontend run build",
     "deploy": "npm run build && npx wrangler deploy",
     "dev": "npm --prefix backend run dev",
-    "start": "npm --prefix backend run dev"
+    "start": "npm --prefix backend run dev",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "wrangler": "^4.97.0"
+  }
 }
